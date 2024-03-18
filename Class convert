@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std ;
+class convert {
+private:
+    double centimeters;
+
+public:
+ double  cm;
+ double cmtom() {
+ return cm*0.01;
+ }
+ 
+ double cmtoft() {
+ return cm*0.0328;
+    }
+    double cmtokm() {
+ return cm*0.00001;
+    }
+     double cmtoin() {
+ return cm*0.3937;
+    }
+    };
+int main() {
+convert c1;
+    c1.cmtom();
+    c1.cmtoin();
+    c1.cmtokm();
+    c1.cmtoft();
+    c1.cm;
+    
+    
+    cout << "enter" << endl;
+    cin >> c1.cm;
+    
+    cout << "centimetre to meter:"<<c1.cmtom()<<endl;
+    cout << "centimetre to kilometre:" <<c1.cmtokm()<<endl;
+    cout << "centimetre to feet:" <<c1.cmtoft()<<endl;
+    cout << "centimetre to inch:" <<c1.cmtoin()<<endl;
+
+ 
+
+    return 0;
+    }

@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class EMPLOYEE{
+  public:
+  int em_no;
+  string emname;
+  int netsalary;
+  double basic;
+  double DA;
+  double IT;
+  };
+int main()
+{
+    EMPLOYEE e1;
+    double netsalary;
+    e1.em_no;
+    e1.emname;
+    e1.basic;
+    e1.netsalary;
+    e1.DA;
+    e1.IT;
+    cout << "your number:" << endl;
+    cin >>e1.em_no;
+    cout << "your name:" << endl;
+    cin>>e1.emname;
+    cout << "basic salary:" << endl;
+    cin >>e1.basic;
+    cout << "da:" << endl;
+    cin >> e1.DA;
+    cout << "income tax:" << endl;
+    cin >> e1.IT;
+    netsalary= (e1.basic)+(e1.basic*e1.DA)-(e1.basic*e1.IT);
+    cout << "total salary:" <<netsalary<<endl;
+    return 0;
+}
